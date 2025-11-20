@@ -1,115 +1,329 @@
-# Play-to-Earn Game on Blockchain DApp 
+# 🎲 Blockchain Dice Game - Play-to-Earn DApp
 
-![alt text](https://www.daulathussain.com/wp-content/uploads/2025/10/Build-Deploy-a-Play-to-Earn-Game-on-Blockchain-DApp-Next.js-Solidity-Crypto-Game-Project.jpg)
+A fully functional, decentralized dice game built on Ethereum blockchain where players can bet on numbers 1-6 and win 6x their bet! Built with Next.js, Solidity, and modern Web3 technologies.
 
-- [Final Source Code](https://www.theblockchaincoders.com/sourceCode/build-and-deploy-a-play-to-earn-game-on-blockchain-dapp-or-next.js-+-solidity-crypto-game-project)
+![Blockchain Gaming](https://img.shields.io/badge/Blockchain-Gaming-blue)
+![Solidity](https://img.shields.io/badge/Solidity-^0.8.19-363636)
+![Next.js](https://img.shields.io/badge/Next.js-13.4.19-black)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-#### Setup Video
+## 🌟 Overview
 
-- [Final Code Setup video](https://youtu.be/lvBgYNFzXkQ?si=joohUtpn9iscFtRZ)
+This is a complete Play-to-Earn (P2E) blockchain-based dice game where players can:
+- 🎯 Predict numbers from 1-6
+- 💰 Place bets in ETH (0.001 - 1 ETH)
+- 🎊 Win 6x their bet on correct predictions
+- 📊 Track statistics and game history
+- 🔐 Secure, transparent, and provably fair gameplay
 
-## Project Overview
+## ✨ Features
 
-Build & Deploy a Play-to-Earn Game on Blockchain DApp | Next.js + Solidity - Crypto Game Project
+### 🎮 Game Mechanics
+- **Dice Roll Prediction**: Choose a number between 1-6
+- **Flexible Betting**: Bet anywhere from 0.001 to 1 ETH
+- **High Payout**: Win 6x your bet amount on correct prediction
+- **Instant Results**: Fast blockchain transactions on local testnet
+- **House Edge**: Fair 5% house edge
 
-In this video, you’ll learn how to build and deploy your own Play-to-Earn (P2E) blockchain game from scratch using Next.js and Solidity. We’ll cover everything — from writing smart contracts, integrating a Web3 frontend, handling rewards and tokens, to deploying your game on the blockchain. 🚀
+### 💻 Frontend Features
+- **Wallet Integration**: Seamless MetaMask connection via RainbowKit
+- **Real-time Balance**: Live ETH balance tracking
+- **Animated Dice**: Smooth rolling animations for engaging UX
+- **Statistics Dashboard**: Track wins, losses, win rate, and total earnings
+- **Game History**: Complete history with filtering and sorting
+- **Responsive Design**: Works perfectly on desktop and mobile
+- **Toast Notifications**: Real-time feedback for all actions
 
-Perfect for developers who want to dive into GameFi and Web3 gaming development in 2025!
+### 🔒 Smart Contract Features
+- **Secure Betting**: Solidity-based smart contract with validation
+- **Owner Controls**: Admin functions for fund management
+- **Event Logging**: All games tracked on-chain
+- **Fund Management**: Deposit/withdraw functions for house bankroll
+- **Configurable Settings**: Adjustable bet limits and house edge
 
-What You’ll Learn:
+## 🛠️ Tech Stack
 
-- Setting up the project with Next.js
-- Writing and deploying the Solidity smart contract
-- Integrating Web3 and wallet connection
-- Managing player rewards with crypto tokens
-- Deploying the full DApp live
+### Frontend
+- **Next.js 13.4.19** - React framework
+- **RainbowKit** - Wallet connection UI
+- **Wagmi** - React hooks for Ethereum
+- **TanStack Query** - Data fetching and caching
+- **Tailwind CSS** - Styling
+- **Framer Motion** - Animations
+- **Ethers.js** - Ethereum library
+- **React Hot Toast** - Notifications
+- **Lucide React** - Icons
 
-#BlockchainGaming #PlayToEarn #Web3 #Solidity #Nextjs #GameFi #DAppDevelopment #CryptoGaming #Web3Development
+### Blockchain
+- **Solidity ^0.8.19** - Smart contract language
+- **Hardhat** - Development environment
+- **Ethereum** - Blockchain platform
+- **Local Testnet** - For development and testing
 
-## Instruction
+## 📋 Prerequisites
 
-Kindly follow the following Instructions to run the project in your system and install the necessary requirements
+Before running this project, ensure you have:
 
-#### Deploying Dapp
+- **Node.js** v20 or higher
+- **npm** or **yarn** package manager
+- **MetaMask** browser extension
+- **Git** for version control
 
-```
-  WATCH: Hostinger
-  Get : Discount 75%
-  URL: https://www.hostg.xyz/aff_c?offer_id=6&aff_id=139422
-```
+## 🚀 Quick Start
 
-### MULTI-CURRENCY ICO DAPP
+### 1. Clone the Repository
 
-```
-  PROJECT: MULTI-CURRENCY ICO DAPP
-  Code: https://www.theblockchaincoders.com/sourceCode/multi-currency-ico-dapp-using-next.js-solidity-and-wagmi
-  VIDEO: https://youtu.be/j8NO8ea5zVo?si=jCmvfXmpmefwjhO5
-```
-
-#### Install Vs Code Editor
-
-```
-  GET: VsCode Editor
-  URL: https://code.visualstudio.com/download
-```
-
-#### NodeJs & NPM Version
-
-```
-  NodeJs: 20 / LATEST
-  URL: https://nodejs.org/en/download
-  Video: https://youtu.be/PIR0oBVowXU?si=9eNdR29u37F2ujJJ
-```
-
-#### FINAL SOURCE CODE
-
-```
-  SETUP VIDEO:
-  URL: https://www.theblockchaincoders.com/sourceCode/build-and-deploy-blockchain-healthcare-dapp-or-solidity-smart-contract-+-next.js-or-web3-health-dapp-project
-```
-
-All you need to follow the complete project and follow the instructions which are explained in the tutorial by Daulat
-
-## Final Code Instruction
-
-If you download the final source code then you can follow the following instructions to run the Dapp successfully
-
-#### PINATA IPFS
-
-```
-  OPEN: PINATA.CLOUD
-  URL:https://pinata.cloud/
+```bash
+git clone https://github.com/saksham-source/blockchain-project-1.git
+cd blockchain-project-1
 ```
 
-#### reown
+### 2. Install Dependencies
 
-```
-  OPEN: WALLET CONNECT
-  URL: https://docs.reown.com/cloud/relay
-```
+```bash
+# Install root dependencies
+npm install
 
-#### FORMSPREE
-
-```
-  OPEN: FORMSPREE
-  URL: https://formspree.io/
+# Install web3 dependencies
+cd web3
+npm install
+cd ..
 ```
 
-#### ALCHEMY
+### 3. Start the Blockchain
+
+```bash
+# Make the script executable
+chmod +x start-blockchain.sh
+
+# Start Hardhat node and deploy contract
+./start-blockchain.sh
+```
+
+This will:
+- Start a local Hardhat blockchain node
+- Deploy the NumberPredictionGame smart contract
+- Fund the contract with 10 ETH
+- Display contract address and test accounts
+
+### 4. Configure MetaMask
+
+1. Open MetaMask and add a new network:
+   - **Network Name**: Localhost
+   - **RPC URL**: http://127.0.0.1:8545
+   - **Chain ID**: 1337
+   - **Currency Symbol**: ETH
+
+2. Import test account:
+   - Copy private key from terminal output
+   - Import into MetaMask
+   - You'll have ~10,000 ETH for testing
+
+### 5. Start the Frontend
+
+```bash
+# In a new terminal
+npm run dev
+```
+
+The app will be available at `http://localhost:3001`
+
+### 6. Start Playing! 🎮
+
+1. Connect your MetaMask wallet
+2. Select a number (1-6)
+3. Enter your bet amount
+4. Click "Place Bet"
+5. Watch the dice roll and see if you win!
+
+## 📁 Project Structure
 
 ```
-  OPEN: ALCHEMY.COM
-  URL: https://www.alchemy.com/
+blockchain-project-1/
+├── components/           # React components
+│   ├── Header.jsx       # Navigation and wallet info
+│   ├── GameBoard.js     # Main game interface
+│   ├── Dice.jsx         # Animated dice component
+│   ├── NumberSelector.js # Number selection UI
+│   ├── StatsPanel.jsx   # Statistics display
+│   ├── GameHistory.jsx  # Game history table
+│   └── ResultModal.jsx  # Win/loss modal
+├── hooks/               # Custom React hooks
+│   ├── useGameContract.js  # Contract interaction
+│   └── useGameHistory.js   # History management
+├── pages/               # Next.js pages
+│   ├── _app.js         # App wrapper with providers
+│   └── index.js        # Home page
+├── config/              # Configuration files
+│   └── wagmi.js        # Wagmi and RainbowKit setup
+├── utils/               # Utility functions
+│   ├── contract.js     # Contract utilities
+│   └── contractABI.js  # Contract ABI
+├── web3/                # Blockchain code
+│   ├── contracts/      # Solidity contracts
+│   │   └── PlayToEarn.sol
+│   ├── scripts/        # Deployment scripts
+│   │   ├── deploy.js
+│   │   └── test-game.js
+│   └── hardhat.config.js
+└── styles/              # CSS styles
+    └── globals.css
 ```
 
-## Important Links
+## 🎯 How to Play
 
-- [Get Pro Blockchain Developer Course](https://www.theblockchaincoders.com/pro-nft-marketplace)
-- [Support Creator](https://bit.ly/Support-Creator)
-- [All Projects Source Code](https://www.theblockchaincoders.com/SourceCode)
+### Game Rules
 
-## Authors
+1. **Select a Number**: Choose any number from 1 to 6
+2. **Place Your Bet**: Enter amount between 0.001 and 1 ETH
+3. **Confirm Transaction**: Approve the bet in MetaMask
+4. **Watch the Dice Roll**: Animated dice shows the result
+5. **Collect Winnings**: If you win, 6x your bet is sent automatically!
 
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
+### Betting Limits
+
+- **Minimum Bet**: 0.001 ETH
+- **Maximum Bet**: 1.0 ETH
+- **Payout Multiplier**: 6x on win
+- **House Edge**: 5%
+
+### Winning Odds
+
+- **Probability**: 1 in 6 (16.67%)
+- **Payout**: 6x your bet
+- **Expected Return**: ~95% (accounting for house edge)
+
+## 📊 Smart Contract Details
+
+### Contract Address
+After deployment, you'll find the contract at the address shown in the terminal.
+
+### Main Functions
+
+```solidity
+// Place a bet
+function play(uint8 _predictedNumber) external payable
+
+// Get game details
+function getGame(uint256 _gameId) external view returns (...)
+
+// Get player's games
+function getPlayerGames(address _player, uint256 _limit) external view
+
+// Owner functions
+function depositFunds() external payable
+function withdraw(uint256 _amount) external onlyOwner
+function setBetLimits(uint256 _minBet, uint256 _maxBet) external onlyOwner
+```
+
+### Events
+
+```solidity
+event GamePlayed(
+    uint256 indexed gameId,
+    address indexed player,
+    uint256 betAmount,
+    uint8 predictedNumber,
+    uint8 resultNumber,
+    bool won,
+    uint256 payout
+)
+
+event FundsDeposited(address indexed depositor, uint256 amount)
+event FundsWithdrawn(address indexed owner, uint256 amount)
+```
+
+## 🔧 Development
+
+### Run Tests
+
+```bash
+cd web3
+npx hardhat test
+```
+
+### Deploy to Network
+
+```bash
+cd web3
+npx hardhat run scripts/deploy.js --network <network-name>
+```
+
+### Test Game Contract
+
+```bash
+cd web3
+npx hardhat run scripts/test-game.js --network localhost
+```
+
+## 🐛 Troubleshooting
+
+### MetaMask Not Connecting
+- Ensure you're on the correct network (Chain ID: 1337)
+- Try disconnecting and reconnecting
+- Clear MetaMask cache if needed
+
+### Balance Shows 0
+- Click the refresh icon next to balance
+- Disconnect and reconnect wallet
+- Verify you have ETH in your account
+
+### Contract Not Found
+- Make sure blockchain is running (`./start-blockchain.sh`)
+- Check contract address in `.env.local` matches deployed address
+- Verify network configuration in `config/wagmi.js`
+
+### Transaction Fails
+- Check you have enough ETH for gas
+- Ensure bet amount is within limits (0.001 - 1 ETH)
+- Verify contract has sufficient balance for payouts
+
+## 📚 Additional Resources
+
+- [Solidity Documentation](https://docs.soliditylang.org/)
+- [Hardhat Guides](https://hardhat.org/getting-started/)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [RainbowKit Docs](https://www.rainbowkit.com/docs/introduction)
+- [Wagmi Documentation](https://wagmi.sh/)
+
+## 🔮 Future Enhancements
+
+- [ ] Chainlink VRF for provably fair randomness
+- [ ] Multiple game modes (higher/lower, odd/even)
+- [ ] Leaderboard system
+- [ ] Token rewards (ERC-20)
+- [ ] Multiplayer tournaments
+- [ ] Mobile app (React Native)
+- [ ] Mainnet deployment
+- [ ] Social features and sharing
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## ⚠️ Disclaimer
+
+This project is for educational purposes only. The random number generation used is NOT suitable for production use with real money. For production deployment, integrate Chainlink VRF or similar secure randomness solutions.
+
+## 👨‍💻 Author
+
+**Saksham**
+- GitHub: [@saksham-source](https://github.com/saksham-source)
+
+## 🌟 Show Your Support
+
+Give a ⭐️ if this project helped you learn blockchain development!
+
+---
+
+**Built with ❤️ using Next.js, Solidity, and Web3 technologies**
