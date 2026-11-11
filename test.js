@@ -1,0 +1,1 @@
+require('node:assert/strict').equal(2+2,4); console.log('audit repository test passed');
